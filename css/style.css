@@ -1,9 +1,64 @@
 body {
     background-color: cornflowerblue;
     text-align: center;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 60px;
+    background-color: dodgerblue;
+    border-radius: 10px;
 }
 
 h1 {
     color: antiquewhite;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+h2 {
+    margin: 0 0 10px;
+
+}
+
+select {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+.city {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    border-bottom: 1px dashed blanchedalmond;
+}
+
+.city:last-child {
+    border: none;
+}
+
+.date {
+    opacity: 0.5;
+}
+
+.time {
+   font-size: 46px;
+   font-weight: bold;
+}
+
+.time small {
+    font-size: 18px;
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+footer {
+    text-align: center;
+    font-size: 18px;
+    color: bisque;
+    opacity: 0.7;
+}
