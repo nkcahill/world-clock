@@ -22,7 +22,7 @@ function updateTime () {
     if (tokyoElement) {
         let tokyoDate = tokyoElement.querySelector('.date');
         let tokyoTimeElement = tokyoElement.querySelector('.time');
-        let tokyoTime = moment().tz('Europe/Paris');
+        let tokyoTime = moment().tz('Asia/Tokyo');
         tokyoDate.innerHTML = moment().format("dddd, MMMM Do, YYYY");
         tokyoTimeElement.innerHTML = tokyoTime.format('h:mm:ss [<small>]A[</small>]');
     }
