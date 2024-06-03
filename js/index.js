@@ -17,6 +17,15 @@ function updateTime () {
         parisDate.innerHTML = moment().format("dddd, MMMM Do, YYYY");
         parisTimeElement.innerHTML = parisTime.format('h:mm:ss [<small>]A[</small>]');
     }
+
+    let tokyoElement = document.querySelector('#tokyo');
+    if (tokyoElement) {
+        let tokyoDate = tokyoElement.querySelector('.date');
+        let tokyoTimeElement = tokyoElement.querySelector('.time');
+        let tokyoTime = moment().tz('Europe/Paris');
+        tokyoDate.innerHTML = moment().format("dddd, MMMM Do, YYYY");
+        tokyoTimeElement.innerHTML = tokyoTime.format('h:mm:ss [<small>]A[</small>]');
+    }
    
 }
 
@@ -38,7 +47,8 @@ function updateCity(event) {
                 <div class="date">${cityTime.format('MMMM Do YYYY')}</div>
             </div>
             <div class="time"> ${cityTime.format('h:mm:ss')} <small>${cityTime.format('A')}</small></div>
-        </div>       `
+        </div>   
+        <a href="/">All cities</a>    `
 }
 
 let citiesSelectElement = document.querySelector('#citySelect');

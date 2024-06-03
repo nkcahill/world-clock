@@ -8,12 +8,12 @@ body {
     max-width: 600px;
     margin: 60px auto;
     padding: 60px;
-    background-color: dodgerblue;
+    background-color:rgb(159, 230, 230);
     border-radius: 10px;
 }
 
 h1 {
-    color: antiquewhite;
+    color: darkblue;
     text-align: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -32,10 +32,11 @@ select {
     font-size: 18px;
 }
 .city {
+    color: darkblue;
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
-    border-bottom: 1px dashed blanchedalmond;
+    border-bottom: 1px dashed darkblue;
 }
 
 .city:last-child {
@@ -44,9 +45,11 @@ select {
 
 .date {
     opacity: 0.5;
+    color:navy
 }
 
 .time {
+    color: darkblue;
    font-size: 46px;
    font-weight: bold;
 }
@@ -60,6 +63,6 @@ select {
 footer {
     text-align: center;
     font-size: 18px;
-    color: bisque;
+    color: darkblue;
     opacity: 0.7;
 }
